@@ -6,12 +6,14 @@ const bgImg = require("@/assets/images/emoji1.png")
 export default function Index() {
   return (
     <ScrollView style= {{flex:1}}>
-    <View style={{ flex: 1, backgroundColor: "black" , padding: 50}}>
-      <ImageBackground source={bgImg} style = {{flex: 1}}/>
+    <View style={{ flex: 2, backgroundColor: "black" , padding: 50}}>
+      <ImageBackground source={bgImg} style = {{flex: 1, justifyContent: "center", alignContent: "center"}}/>
 
-      <View style={{ width: 200, height: 200, backgroundColor: "yellow", padding: 50}} ></View>
+      <View style={{ width: 200, height: 200, backgroundColor: "yellow"}} >
+      </View>
 
-      <View style={{ width: 200, height: 200, backgroundColor: "green", padding: 50}} ></View>
+      <View style={{ width: 200, height: 200, backgroundColor: "green", margin: 50}} >
+      </View>
       <Text>
         <Text style={{color:"white"}}>Shifat</Text>
       </Text>
@@ -20,5 +22,6 @@ export default function Index() {
     </View>
 </ScrollView>
   );
+
 }
  
