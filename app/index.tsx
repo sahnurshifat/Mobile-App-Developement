@@ -1,4 +1,6 @@
-import { View, Text} from "react-native";
+import { View, Text, Image} from "react-native";
+
+const logoImg = require("@/assets/images/emoji4.png")
 
 export default function Index() {
   return (
@@ -10,6 +12,8 @@ export default function Index() {
       <Text>
         <Text style={{color:"white"}}>Shifat</Text>
       </Text>
+      <Image source={logoImg} style={{width: 200, height: 200}}/>
     </View>
   );
 }
+ 
